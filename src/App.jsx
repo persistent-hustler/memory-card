@@ -39,6 +39,7 @@ function App() {
 
   return (
     <>
+    <div>
       {data.map((item) => (
         <button
           key={item.pokemon.name}
@@ -47,7 +48,8 @@ function App() {
           {item.pokemon.name}
         </button>
       ))}
-      <p>Score: {score}</p>
+    </div>
+    <p>Score: {score}</p>
     </>
   );
 }
